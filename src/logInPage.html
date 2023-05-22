@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body
+    class="font-castoro bg-gradient-to-r from-indigo-800 via-purple-700 to-pink-500"
+  >
+    <div class="container mx-auto mt-20">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="w-full md:w-2/4">
+          <img
+            src="../image/undraw_secure_login_pdn4 1.png"
+            alt=""
+            class="w-full h-full"
+          />
+        </div>
+        <div class="w-full md:w-auto">
+          <div class="flex flex-col justify-center items-center md:mr-40">
+            <p class="text-4xl text-white">Log In</p>
+            <input
+              type="text"
+              placeholder="Email"
+              class="w-72 h-10 rounded-md pl-3 mt-8"
+            />
+            <input
+              type="text"
+              placeholder="Password"
+              class="w-72 h-10 rounded-md pl-3 mt-8"
+            />
+
+            <div class="flex mt-4">
+              <input type="checkbox" name="" id="" class="w-4 h-4 rounded-lg" />
+              <p class="text-xs text-white pl-2">Remember Me</p>
+              <p class="underline text-xs ml-2 md:ml-20">
+                <a href="./forgotPassword.html">Forgot Password?</a>
+              </p>
+            </div>
+            <div class="relative">
+              <a href="./paymentDetail.html">
+                <input
+                  type="button"
+                  value="Log In"
+                  class="w-72 h-10 rounded-md pl-3 mt-10 bg-black text-white text-sm"
+                />
+                <div class="absolute left-24 mt-2 inset-9 text-white text-2xl">
+                  <ion-icon name="log-in-outline"></ion-icon>
+                </div>
+              </a>
+            </div>
+            <div class="flex mt-6">
+              <div class="flex justify-start mr-24">
+                <img src="../image/google_icon.png" alt="" class="w-7 h-7" />
+                <p class="text-sm shadow-sm">Google</p>
+              </div>
+              <div class="text-sm flex justify-end">Facebook</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
